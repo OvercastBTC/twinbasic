@@ -1,0 +1,16 @@
+{
+   "welcome.page.title": "Welcome",
+   "build.configurations.caption": "BUILD CONFIGURATIONS",
+   "explorer.project.caption": "PROJECT",
+   "explorer.folder.references": "References",
+   "explorer.folder.resources": "Resources",
+   "explorer.folder.sources": "Sources",
+   "explorer.folder.typelibraries": "ImportedTypeLibraries",
+   "explorer.folder.packages": "Packages",
+   "explorer.folder.miscellaneous": "Miscellaneous",
+   "explorer.file.settings": "Settings",
+   "callstack.mainthread.caption": "MAIN_THREAD",
+   "callstack.thread.idle.caption": "IDLE",
+   "callstack.thread.executing.caption": "EXECUTING",
+   "callstack.thread.breakpoint.caption": "BREAKPOINT"
+}

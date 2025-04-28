@@ -1,0 +1,133 @@
+:root
+{
+    --generalTextColor:             rgb(200, 200, 200);
+	--menuBackColor:                rgb(80, 80, 80);
+    --toolbarBackColor:             rgb(211, 211, 211);
+	--statusBarBackColor:           rgb(80, 80, 80);
+	--leftPanelBackColor:           rgb(43, 43, 43);
+	--rightPanelBackColor:          rgb(43, 43, 43);
+	--centerPanelBackColor:         rgb(43, 43, 43);
+	--codePanelBackColor:           rgb(33, 33, 33);
+	--tabsBackColor:                rgb(43, 43, 43);
+    --tabColor:                     rgb(71, 71, 71);
+	--tabHoverBackColor:            rgb(108, 108, 108);
+	--tabSelectedBackColor:         rgb(30, 30, 30);
+	--codeEditorBackColor:          rgb(0, 0, 0);
+	--sectionHeaderBackColor:       rgb(68, 68, 68);
+	--sectionHeaderBorderTop:       1px solid rgb(37, 37, 37);
+	--panelBorders:                 3px solid rgb(29, 29, 29);
+	--treeItemSelectedBackColor:    rgb(70, 70, 70);
+	--treeItemHoverBackColor:       rgb(113, 113, 113);
+	--panelHeaderIconFilter:        brightness(0.7);
+	--panelHeaderIconFilterAlt:     none;
+	--generalIconFilter:            none;
+	--fileIconFilter:               none;
+	--expandCollapseIconFilter:     none;
+	--tabIconFilter:                none;
+    --scrollbarThumbColor:          rgba(197, 197, 197, 0.322);
+    --codeLensBackColor:            rgba(206, 182, 182, 0.047);
+	--splitterBarBottomBorder:		1px solid rgba(80,80,80,0.5);
+	--infoBoxTextColor: 			white;
+	--infoBoxBackColor: 			rgb(82, 79, 79);
+	--infoBoxIconFilter:			invert(1);
+	--infoBoxButtonBackColor:		rgb(41, 42, 43);
+	--infoBoxButtonHoverBackColor:  rgb(75, 76, 78);
+	--debugLineBackColor:			rgba(251, 255, 0, 0.102);
+	--inlineErrorTextColor: 		white;
+	--inlineErrorBackColor: 		rgb(64, 10, 12);
+	--iconType1Filter:				brightness(2);
+	--iconType1HoverFilter:			brightness(1.5) drop-shadow(1px 4px 5px white);
+	--iconType2Filter:				invert(1);
+	--iconType2HoverFilter:			invert(1)drop-shadow(1px 4px 5px white);
+	--iconType3Filter:				brightness(2);
+	--iconType3HoverFilter:			brightness(1.5) drop-shadow(1px 4px 5px white);
+	--iconToolbarBorder:			1px solid rgba(178, 178, 178, 0.18);
+	--iconToolbarBackColor:			rgba(62, 62, 62);
+	--stopIconRed:					url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iTGF5ZXJfMSIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCAzMzAgMzMwIgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMzAgMzMwOyIKICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ic3RvcEljb25SZWRJbnZlcnRlZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMS4yIChiOGUyNWJlODMzLCAyMDIyLTAyLTA1KSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcwogICBpZD0iZGVmczU2OSIgLz48c29kaXBvZGk6bmFtZWR2aWV3CiAgIGlkPSJuYW1lZHZpZXc1NjciCiAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgc2hvd2dyaWQ9ImZhbHNlIgogICBpbmtzY2FwZTp6b29tPSIyLjE3ODc4NzkiCiAgIGlua3NjYXBlOmN4PSIxNjUiCiAgIGlua3NjYXBlOmN5PSIxNjQuNzcwNTEiCiAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMjU2MCIKICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTUyMCIKICAgaW5rc2NhcGU6d2luZG93LXg9Ii0xMSIKICAgaW5rc2NhcGU6d2luZG93LXk9Ii0xMSIKICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iTGF5ZXJfMSIgLz4KPHBhdGgKICAgaWQ9IlhNTElEXzQ5NF8iCiAgIGQ9Ik0zMTUsMEgxNUM2LjcxNiwwLDAsNi43MTYsMCwxNXYzMDBjMCw4LjI4NCw2LjcxNiwxNSwxNSwxNWgzMDBjOC4yODQsMCwxNS02LjcxNiwxNS0xNVYxNSAgQzMzMCw2LjcxNiwzMjMuMjg0LDAsMzE1LDB6IE0zMDAsMzAwSDMwVjMwaDI3MFYzMDB6IgogICBzdHlsZT0iZmlsbDojZmZmZmZmIiAvPgo8ZwogICBpZD0iZzUzNiI+CjwvZz4KPGcKICAgaWQ9Imc1MzgiPgo8L2c+CjxnCiAgIGlkPSJnNTQwIj4KPC9nPgo8ZwogICBpZD0iZzU0MiI+CjwvZz4KPGcKICAgaWQ9Imc1NDQiPgo8L2c+CjxnCiAgIGlkPSJnNTQ2Ij4KPC9nPgo8ZwogICBpZD0iZzU0OCI+CjwvZz4KPGcKICAgaWQ9Imc1NTAiPgo8L2c+CjxnCiAgIGlkPSJnNTUyIj4KPC9nPgo8ZwogICBpZD0iZzU1NCI+CjwvZz4KPGcKICAgaWQ9Imc1NTYiPgo8L2c+CjxnCiAgIGlkPSJnNTU4Ij4KPC9nPgo8ZwogICBpZD0iZzU2MCI+CjwvZz4KPGcKICAgaWQ9Imc1NjIiPgo8L2c+CjxnCiAgIGlkPSJnNTY0Ij4KPC9nPgo8cGF0aAogICBzdHlsZT0iZmlsbDojNzgyMTIxO3N0cm9rZS13aWR0aDowLjQ1ODk3MSIKICAgZD0iTSAzMC4wNjI1ODcsMTY1IFYgMzAuMDYyNTg3IEggMTY1IDI5OS45Mzc0MSBWIDE2NSAyOTkuOTM3NDEgSCAxNjUgMzAuMDYyNTg3IFoiCiAgIGlkPSJwYXRoNzQzIiAvPjwvc3ZnPgo=');
+	--playIconBlue:					url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iTGF5ZXJfMSIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCAzODYuOTcyIDM4Ni45NzIiCiAgIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni45NzIgMzg2Ljk3MjsiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIHNvZGlwb2RpOmRvY25hbWU9InBsYXlJY29uQmx1ZUludmVydGVkLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4xLjIgKGI4ZTI1YmU4MzMsIDIwMjItMDItMDUpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzCiAgIGlkPSJkZWZzMzciIC8+PHNvZGlwb2RpOm5hbWVkdmlldwogICBpZD0ibmFtZWR2aWV3MzUiCiAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgc2hvd2dyaWQ9ImZhbHNlIgogICBpbmtzY2FwZTp6b29tPSIxLjg1ODAxNTYiCiAgIGlua3NjYXBlOmN4PSIxOTMuNDg2IgogICBpbmtzY2FwZTpjeT0iMTg4LjM3MzAxIgogICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE2NjQiCiAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9Ijk5OSIKICAgaW5rc2NhcGU6d2luZG93LXg9IjMwNCIKICAgaW5rc2NhcGU6d2luZG93LXk9IjMwNCIKICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iTGF5ZXJfMSIgLz4KPHBhdGgKICAgZD0iTTI1Ljk5LDB2Mzg2Ljk3MmwzMzQuOTkxLTE5My40ODZMMjUuOTksMHogTTU1Ljk5LDUxLjk3MmwyNDUuMDA5LDE0MS41MTRMNTUuOTksMzM1VjUxLjk3MnoiCiAgIGlkPSJwYXRoMiIgLz4KPGcKICAgaWQ9Imc0Ij4KPC9nPgo8ZwogICBpZD0iZzYiPgo8L2c+CjxnCiAgIGlkPSJnOCI+CjwvZz4KPGcKICAgaWQ9ImcxMCI+CjwvZz4KPGcKICAgaWQ9ImcxMiI+CjwvZz4KPGcKICAgaWQ9ImcxNCI+CjwvZz4KPGcKICAgaWQ9ImcxNiI+CjwvZz4KPGcKICAgaWQ9ImcxOCI+CjwvZz4KPGcKICAgaWQ9ImcyMCI+CjwvZz4KPGcKICAgaWQ9ImcyMiI+CjwvZz4KPGcKICAgaWQ9ImcyNCI+CjwvZz4KPGcKICAgaWQ9ImcyNiI+CjwvZz4KPGcKICAgaWQ9ImcyOCI+CjwvZz4KPGcKICAgaWQ9ImczMCI+CjwvZz4KPGcKICAgaWQ9ImczMiI+CjwvZz4KPHBhdGgKICAgc3R5bGU9ImZpbGw6IzAwYWFkNDtzdHJva2Utd2lkdGg6MC41MzgyMDkiCiAgIGQ9Im0gNTYuMjQyNzk5LDE5My40ODU5OSBjIDAsLTc3LjQwNzg1IDAuMTAwMDQ0LC0xNDAuNzQxNTQ3IDAuMjIyMzIsLTE0MC43NDE1NDcgMC42MzM1MDUsMCAyNDMuMzAzODMxLDE0MC40NjgzOTcgMjQzLjIyOTU1MSwxNDAuNzkyMDk3IC0wLjA3OTUsMC4zNDYzNyAtMjQyLjcxMDIzLDE0MC42OTEgLTI0My4yMjk1NTEsMTQwLjY5MSAtMC4xMjIyNzYsMCAtMC4yMjIzMiwtNjMuMzMzNyAtMC4yMjIzMiwtMTQwLjc0MTU1IHoiCiAgIGlkPSJwYXRoMzI0IiAvPjxwYXRoCiAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTM4MjA5IgogICBkPSJNIDI2LjEwMzExNywxOTMuNDg1NCBDIDI2LjEwMzExNyw4Ny4zMjk1MDIgMjYuMjg0NzYzLDAuNTc4NTg2MDMgMjYuNTA2Nzc0LDAuNzA1NTgwMjggMzMuMjc3OTg0LDQuNTc4ODMxOSAzNTcuODMyMTEsMTkyLjAwNDg2IDM1OC44MzA1NCwxOTIuNjE4NDggbCAxLjQ2MDAzLDAuODk3MzEgLTE2My45NTY3Miw5NC43MDk4MiBjIC05MC4xNzYxOSw1Mi4wOTA0IC0xNjUuMzY4MzY4LDk1LjUxMDk3IC0xNjcuMDkzNzI0LDk2LjQ5MDE2IGwgLTMuMTM3MDA5LDEuNzgwMzQgeiBNIDE3OC40OTg3MiwyNjQuNjMwODQgQyAyNDUuNzk2NjYsMjI1Ljc2MDYyIDMwMC44MzI3MSwxOTMuNzMwNDggMzAwLjgwMTA2LDE5My40NTI3NSAzMDAuNzUzMzksMTkzLjAzNDQ5IDU2LjU5NjQyOCw1MS42NjgwMjYgNTUuOTIxNzEsNTEuNjY4MDI2IGMgLTAuMTE5NDE2LDAgLTAuMjE3MTIsNjMuODE4MDg0IC0wLjIxNzEyLDE0MS44MTc5NjQgMCw3Ny45OTk4OCAwLjA5NzcsMTQxLjgxNzk3IDAuMjE3MTIsMTQxLjgxNzk3IDAuMTE5NDE2LDAgNTUuMjc5MDcsLTMxLjgwMjkgMTIyLjU3NzAxLC03MC42NzMxMiB6IgogICBpZD0icGF0aDQzOSIgLz48cGF0aAogICBzdHlsZT0iZmlsbDojMTYyZDUwO3N0cm9rZS13aWR0aDowLjUzODIwOSIKICAgZD0ibSA1Ni43MDc2MzgsMjU5LjU1NzE5IGMgLTAuMTA3NjU0LC00MC43NzkzOCAtMC4wNzQ2NCwtMTAzLjg0NjkyIDAuMDczMzcsLTE0MC4xNTAxIGwgMC4yNjkxMDQsLTY2LjAwNTc3NiA5LjQxODY1MSw1LjM5MDg3MSBDIDEwOC40NzMxNCw4Mi44MzM4NjQgMjk1LjMxODExLDE5MS4wNzc4OCAyOTguMDUwNDMsMTkyLjk1MzMgYyAwLjg0MTAyLDAuNTc3MjcgLTAuMTU0MTMsMS4zMDgxNCAtOC4wNzMxMyw1LjkyOTE3IC0zMS4xODE0MiwxOC4xOTU1MSAtMTk5LjAzNTgzNCwxMTUuMjgxMyAtMjIwLjAxMDE4LDEyNy4yNTIyOSAtNS4zMjgyNjYsMy4wNDEwOSAtMTAuNDQ3MzU0LDUuOTg3NjggLTExLjM3NTc1Miw2LjU0OCBsIC0xLjY4Nzk5NywxLjAxODc1IHoiCiAgIGlkPSJwYXRoMTE0IiAvPjwvc3ZnPgo=');
+	--codeDropDownsBackColor:		rgb(48, 47, 47);
+	--codeDropDownsSelectColor:		rgb(194, 194, 194);
+	--problemWarningIconFilter:		none;
+	--systemIconsFullScreenFilter:  none;
+	--fullScreenToggleBackColor: 	rgb(84, 84, 84);
+	--iconTypeUndoRedoFilter:		none;
+	--licenceInfoTextColor:         rgb(127, 182, 127);
+	--errorSquiggleBackColor:		rgba(255, 0, 0, 0.188);
+	--selectedTextBackColor:        rgba(255, 255, 255, 0.251) !important;
+	--debugTimestampColor:			rgb(80, 100, 100);
+	--contextMenuBackColor:			rgb(68, 68, 68);
+	--contextMenuForeColor:			rgb(212, 211, 211);
+	--contextMenuShadowColor:		rgb(255, 255, 255);
+	--contextMenuItemHoverColor:    rgb(150, 150, 150);
+	--virtualDocBackColor:			rgb(36, 33, 33);
+	--virtualDocForeColor:			rgb(255, 255, 255);
+	--findResultColor:				rgba(205, 205, 226, 0.712);
+	--loadingOverlayBackColor:		rgb(0,0,0);
+	--packageManagerHoverBackColor: rgba(255, 255, 255, 0.05) !important;
+	--inlineDecorationColor:		rgba(192, 189, 189, 0.18);
+}
+
+
+.basicClass { color:#e4c685 !important; }
+.basicLibrary { color: #bb6464 !important; }
+.basicInterface { color: #ab3b4d !important; }
+.basicParameterByVal { color: #9b79b3 !important; }
+.basicParameterByRef { color: #9b79b3 !important; }
+.basicUDT { color: #a5630d !important; }
+.basicModule { color: #a8a887 !important; }
+.basicBuiltInDataType { color: #b1551f !important; }
+.basicConstant { color: #6089b4 !important; }
+.basicVariable { color: #8b8b52 !important; }
+.basicField { color: #f59e1b !important; }
+.basicEnum { color: #738dc5 !important; }
+.basicEnumMember { color: #a1adc7 !important; }
+.basicKeyword { color: #6c8eda !important; }
+.basicOperator { color: #80a1a5 !important; }
+.basicGenericDataType { color: #eeda83 !important; }
+.basicGenericValue { color: #86ee83 !important; }
+.basicReturnValue { color: #ee8391 !important; }
+.basicMe { color: #a13838 !important; }
+.basicNamedArgument { color: #74384c !important; }
+.basicMultiLineSeperator { color: #74384c !important; }
+.basicLateBoundFunction { color: #e7ac5f !important; }
+.basicLineLabel { color: #ccc6be !important; text-decoration: underline; }     
+.basicLineNumber { color: #ccc6be !important; text-decoration: underline; }     
+.basicLiteralNumeric { color: #aeca89 !important; }
+.basicLiteralBoolean { color: #c495d3 !important; }
+.basicLiteralNull { color: #c495d3 !important; }
+.basicLiteralNothing { color: #c495d3 !important; }
+.basicLiteralEmpty { color: #c495d3 !important; }
+.basicLiteralDate { color: #c495d3 !important; }
+.basicConditionalCompilationDirective { color: #ad8c98 !important; }
+.basicVariableUndeclared { color: #b9929c !important; }
+.basicFunction { color: #cf9a5d !important; }
+.basicDeclareFunction { color: #bb956a !important; }
+.basicSub { color: #cf9a5d !important; }
+.basicDeclareSub { color: #bb956a !important; }
+.basicPropertyGet { color: #864f0f !important; }
+.basicPropertyLet { color: #864f0f !important; }
+.basicPropertySet { color: #864f0f !important; }
+.basicGlobalVariablePrivate { color: #f38096 !important; }
+.basicGlobalVariablePublic { color: #d34056 !important; }
+.basicLineContinuationCharacter { color: #808080 !important; }
+
+
+.bracket-highlighting-0, .bracket-highlighting-3, .bracket-highlighting-6, .bracket-highlighting-9 
+{
+    color: #ffd700 !important;
+}
+
+.bracket-highlighting-1, .bracket-highlighting-4, .bracket-highlighting-7, .bracket-highlighting-10
+{
+    color: #da70d6 !important;
+}
+
+.bracket-highlighting-2, .bracket-highlighting-5, .bracket-highlighting-8, .bracket-highlighting-11
+{
+    color: #179fff !important;
+}
+
+.basicLiteralString { color: #aeca89 !important; font-style: oblique; }
+.basicAttribute { color: #5c5c53 !important; }
+.basicComment { color: #448a63 !important; }
+.basicConditionalCompilationExcludedCode { color: #989599 !important; font-style: oblique; } 

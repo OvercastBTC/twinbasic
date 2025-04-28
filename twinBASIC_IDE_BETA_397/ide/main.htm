@@ -1,0 +1,144 @@
+<html>
+<head>
+	<base href="/{PASSKEY}/">
+	<script type="text/javascript" src="chart.js"></script>
+
+	<script src="jquery.min.js"></script>
+	<script src="spectrum.min.js"></script>
+	<script src="grapick.min.js"></script>
+
+	<script src="monaco-editor-0.35.1-pre-min/vs/loader.js"></script>
+	<script src="main.js"></script>
+	
+	<link rel="stylesheet" href="styles.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="formDesigner.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="configEditor.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="spectrum.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="grapick.min.css" crossorigin="anonymous">
+	<link id="cssTheme" rel="stylesheet" href="" crossorigin="anonymous">
+</head>
+<body spellcheck="false">
+	<canvas id="theCanvas" style="display: none; position: absolute; z-index: 10000000;"></canvas>
+	<img id="theImage1" style="position: absolute; z-index: 10000000; top: 50px; border: 0"></img>
+	<div class='displayNone' id='bodyInner'>
+		<div id="appOverlay"></div>
+		<div id="bannerBackdrop"></div>
+		<div id="contextMenu"></div>
+		<div id="contextMenuSUB"></div>
+		<div id="hoverTooltip"></div>
+		<div id="modalDialogContainer"></div>
+		<div id="root" class="invisible">
+			<div id="rootMenuTitleFull"></div>
+			<div id="rootMenu1">
+				<div class="menuItem" id="rootMenuFile">File</div>
+				<div class="menuItem" id="rootMenuEdit">Edit</div>
+				<div class="menuItem" id="rootMenuView">View</div>
+				<div class="menuItem" id="rootMenuProject">Project</div>
+				<div class="menuItem" id="rootMenuFormat">Format</div>
+				<div class="menuItem" id="rootMenuDebug">Debug</div>
+				<div class="menuItem" id="rootMenuRun">Run</div>
+				<div class="menuItem" id="rootMenuTools">Tools</div>
+				<div class="menuItem" id="rootMenuAddins">Add-Ins</div>
+				<div class="menuItem" id="rootMenuWindows">Window</div>
+				<div class="menuItem" id="rootMenuHelp">Help</div>
+				<div class="" id="rootMenuTextOuter"><div class="" id="rootMenuText"></div></div>
+				<div class="menuItem hide" id="rootMenuDevTools">DEVTOOLS</div>
+				<div class="menuItem" id="rootMenuAdmin"></div>
+				<div class="menuItem licenceInfo" id="rootMenuLicence"></div>
+				<div class="menuItem" id="rootMenuMinimize" title="Minimize Window"></div>
+				<div class="menuItem" id="rootMenuMaximize" title="Maximize/Restore Window"></div>
+				<div class="menuItem" id="rootMenuClose" title="Close twinBASIC"></div>
+			</div>
+			<div id="rootMenu3">
+			</div>
+			<div id="rootTop">
+				<div id="leftPanel"><div id='leftPanelResizer'></div></div>
+				<div id="centerPanel">
+					<div id="codePanel">
+						<div id="rootMenu1fullScreen">
+							<div id="rootMenu1FullScreenToggle" title="Exit Full Screen (F4)">FULL SCREEN</div>
+							<div class="menuItem" id="rootMenuMinimize2" title="Minimize Window"></div>
+							<div class="menuItem" id="rootMenuMaximize2" title="Maximize/Restore Window"></div>
+							<div class="menuItem" id="rootMenuClose2" title="Close twinBASIC"></div>
+						</div>
+						<div id="iconToolbar">
+							<div id="iconToolbarInner">
+								<div id="rootMenu2">
+									<div class="icon iconType1" id="saveIcon" title="Save All Changes"></div>
+									<div class="icon iconType1" id="searchIcon" title="Find In Files (SHIFT+CTRL+F)"></div>
+									<div class="icon iconType1" id="designSwitchIcon" title="Switch Between Form And Code"></div>
+
+									<div class="toolbarSplitter"></div>
+
+									<div class="icon iconType1 iconTypeUndoRedo" id="undoIcon" title="Undo (CTRL+Z)"></div>
+									<div class="icon iconType1 iconTypeUndoRedo" id="redoIcon" title="Redo (CTRL+Y)"></div>
+									<div class="icon iconType1" id="commentIcon" title="Comment Selection (CTRL+K)"></div>
+									<div class="icon iconType1" id="uncommentIcon" title="Uncomment Selection (SHIFT+CTRL+K)"></div>
+									<div class="icon iconType1" id="indentIcon" title="Indent Block (TAB)"></div>
+									<div class="icon iconType1" id="unindentIcon" title="Outdent Block (SHIFT+TAB)"></div>
+									<div class="icon iconType1" id="paramHintsIcon" title="Show Inline Parameter Hints"></div>
+
+									<div class="toolbarSplitter"></div>
+									
+									<div class="icon playIconBlue" id="playIcon" title="Start / Continue (F5)"></div>
+									<div class="icon iconType2" id="pauseIcon" title="Break Into Code (Ctrl+Break)"></div>
+									<div class="icon stopIconRed" id="stopIcon" title="Stop"></div>
+									<div class="icon iconType2" id="debugStepOverIcon" title="Step Over (F10 or legacy Shift+F8)"></div>
+									<div class="icon iconType2" id="debugStepIntoIcon" title="Step Into (F11 or legacy F8)"></div>
+									<div class="icon iconType2" id="debugStepOutIcon" title="Step Out (Shift+F11 or legacy Ctrl+Shift+F8)"></div>
+									<div class="icon iconType2" id="runOrPreviewIcon" title="Run the code at the cursor position / Preview the form (F6)"></div>
+
+									<div class="toolbarSplitter"></div>
+									
+									<select id="buildConfigSelector" title="Choose a build configuration"></select>
+									<div class="icon iconType1" id="restartIcon" title="Restart the compiler"></div>
+									<div class="icon iconType3" id="trashIcon" title="Clean (deregister &amp; delete build)"></div>
+									<div class="icon iconType1" id="buildIcon" title="Build"></div>
+								</div>
+							</div>
+						</div>
+						<div id="codePanelTabs">
+						</div>
+						<div id="codePanelMain">
+						</div>
+					</div>
+					<div id="centerInnerPanel">
+						<div id='centerPanelResizer'></div>
+					</div>
+				</div>
+				<div id="rightPanel"><div id='rightPanelResizer'></div></div>
+			</div>
+			<div id="rootBottom">
+				
+			</div>
+			
+			<div class="msgBox">
+				<div id="msgBoxInner1">
+					<div id="msgBoxInner2">
+						<div id="msgBoxInner3">
+							<div class="msgBoxElement"><div class='msgBoxIcon infoIcon'></div><div class="msgBoxText" id="msgBox3text"></div><div class='msgBoxCloseIcon closeIcon' id='closeMsgBox3'></div><div id="msgBox3Extra"><div id="msgBox3Copy">Copy to clipboard</div></div></div>
+						</div>
+						<div class="msgBoxElement"><div class='msgBoxIcon infoIcon'></div><div class="msgBoxText" id="msgBox2text"></div><div class='msgBoxCloseIcon closeIcon' id='closeMsgBox2'></div><div id="msgBox2Extra"><div id="msgBox2Copy">Copy to clipboard</div></div></div>
+					</div>
+					<div class="msgBoxElement"><div class='msgBoxIcon infoIcon'></div><div class="msgBoxText" id="msgBox1text"></div><div class='msgBoxCloseIcon closeIcon' id='closeMsgBox1'></div><div id="msgBox1Extra"><div id="msgBox1Copy">Copy to clipboard</div></div></div>
+				</div>
+			</div>
+
+			<div id="rootStatusBar">
+				<div id="compilerStatusOuter"><div id="compilerStatusInner"><div class="statusIcon warningIcon"></div><div id="compilerStatus">tB Services: UNAVAILABLE</div></div></div>
+				<div id="findUsOnline">
+					<div id="kofiIcon" title="Support us: buy us a coffee!"></div>
+					<div id="discordIcon" title="twinBASIC Discord Server (for chat, help & support)"></div>
+					<div id="twitterIcon" title="twinBASIC Twitter Feed"></div>
+					<div id="githubIcon" title="twinBASIC GitHub Repository (for help & support)"></div>	
+				</div>
+				<div id="runningProcessesContainer"></div>
+				<div class="statusMenuMiddleSpace"></div>
+				<div class="statusMenuItem hide" id="statusMemUsage" title="Live Memory & Resources Usage (Debugger)"><div id='memUsage'>?</div>MB in use&nbsp;&nbsp;|&nbsp;&nbsp;<div id='userObjects'>?</div>&nbsp;ui objects&nbsp;&nbsp;|&nbsp;&nbsp;<div id='gdiObjects'>?</div>&nbsp;gdi objects</div>
+				<div class="statusMenuItem hide" id="statusLineCol" title="Line / Column position">Ln&nbsp;<div id='lineNum'>0</div>, Col&nbsp;<div id='columnNum'>0</div></div>
+				<div class="statusMenuPadding"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
